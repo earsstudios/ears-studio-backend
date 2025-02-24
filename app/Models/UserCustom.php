@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Tymon\JWTAuth\Contracts\JWTSubject;
 
-class User extends Authenticatable implements JWTSubject
+class UserCustom extends Authenticatable implements JWTSubject
 {
     protected $table = 'tbl_users'; // Ganti dengan nama tabelmu
 
