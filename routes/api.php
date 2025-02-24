@@ -23,3 +23,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('/update-report', [ReportController::class, 'updateReport']);
 Route::post('/delete-report', [ReportController::class, 'destroy']);
 Route::get('/export-reports', [PdfExportController::class, 'export']);
+Route::get('/tes', function () {
+    return response()->json([
+        'success' => true,
+        'message' => 'Test API export reports',
+        'data' => []
+    ]);
+});
